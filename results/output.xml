@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.8 on win32)" generated="20230626 19:59:31.968" rpa="false" schemaversion="3">
+<suite id="s1" name="All User Login" source="C:\Users\ADMIN\Desktop\Deepintent_Contact_Us\All_User_Login.robot">
+<test id="s1-t1" name="Test_Admin_Login" line="6">
+<kw name="Open Browser and Open Login Page" library="Login_Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Login_Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 19:59:32.546" level="FAIL">Variable '${Browser}' not found.</msg>
+<status status="FAIL" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<status status="FAIL" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Input Email And Pass" library="Login_Page">
+<arg>${USER Admin}[email]</arg>
+<arg>${USER Admin}[password]</arg>
+<status status="NOT RUN" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Sleep Time 2s" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Click Sign In Button" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Page Have Hospital Statistics Header" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.546"/>
+</kw>
+<doc>Test Admin Login</doc>
+<tag>Somke</tag>
+<status status="FAIL" starttime="20230626 19:59:32.530" endtime="20230626 19:59:32.546">Variable '${Browser}' not found.</status>
+</test>
+<test id="s1-t2" name="Test_Hr_Login" line="15">
+<kw name="Open Browser and Open Login Page" library="Login_Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Login_Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 19:59:32.561" level="FAIL">Variable '${Browser}' not found.</msg>
+<status status="FAIL" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<status status="FAIL" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Input Email And Pass" library="Login_Page">
+<arg>${USER HR}[email]</arg>
+<arg>${USER HR}[password]</arg>
+<status status="NOT RUN" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Sleep Time 2s" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Click Sign In Button" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Page Have Hospital Statistics Header" library="Login_Page">
+<status status="NOT RUN" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 19:59:32.561" endtime="20230626 19:59:32.561"/>
+</kw>
+<doc>Test HR Login</doc>
+<tag>Somke</tag>
+<status status="FAIL" starttime="20230626 19:59:32.546" endtime="20230626 19:59:32.561">Variable '${Browser}' not found.</status>
+</test>
+<doc>Test Login Functionality</doc>
+<status status="FAIL" starttime="20230626 19:59:31.968" endtime="20230626 19:59:32.561"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">Somke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="All User Login">All User Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230626 19:59:32.030" level="ERROR">Error in file 'C:\Users\ADMIN\Desktop\Deepintent_Contact_Us\POM\Login_Page.robot' on line 25: Setting variable '&amp;{Browser}' failed: Multiple errors:
+- Invalid dictionary variable item 'chrome'. Items must use 'name=value' syntax or be dictionary variables themselves.
+- Invalid dictionary variable item 'firefox'. Items must use 'name=value' syntax or be dictionary variables themselves.</msg>
+</errors>
+</robot>

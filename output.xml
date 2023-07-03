@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.8 on win32)" generated="20230703 09:41:33.468" rpa="false" schemaversion="3">
+<suite id="s1" name="All User Login" source="C:\Users\ADMIN\Desktop\Deepintent_Contact_Us\All_User_Login.robot">
+<test id="s1-t1" name="Test_Admin_Login" line="6">
+<kw name="Open Browser and Open Login Page" library="Login_Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Login_Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230703 09:41:33.733" level="INFO">Opening browser 'chrome' to base url 'https://hospitalb.com/login'.</msg>
+<status status="PASS" starttime="20230703 09:41:33.733" endtime="20230703 09:41:40.765"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230703 09:41:40.765" endtime="20230703 09:41:40.885"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:33.733" endtime="20230703 09:41:40.885"/>
+</kw>
+<kw name="Input Email And Pass" library="Login_Page">
+<arg>${USER Admin}[email]</arg>
+<arg>${USER Admin}[password]</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:40.885" level="INFO">Typing text 'admin@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230703 09:41:40.885" endtime="20230703 09:41:41.124"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:41.124" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230703 09:41:41.124" endtime="20230703 09:41:41.222"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:40.885" endtime="20230703 09:41:41.222"/>
+</kw>
+<kw name="Sleep Time 2s" library="Login_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230703 09:41:43.225" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230703 09:41:41.222" endtime="20230703 09:41:43.225"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:41.222" endtime="20230703 09:41:43.225"/>
+</kw>
+<kw name="Click Sign In Button" library="Login_Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@value='Sign In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:43.225" level="INFO">Clicking element 'xpath://input[@value='Sign In']'.</msg>
+<status status="PASS" starttime="20230703 09:41:43.225" endtime="20230703 09:41:48.087"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:43.225" endtime="20230703 09:41:48.088"/>
+</kw>
+<kw name="Page Have Hospital Statistics Header" library="Login_Page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://h1[contains(text(),'Hospital Statistics')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230703 09:41:48.137" level="INFO">Element 'xpath://h1[contains(text(),'Hospital Statistics')]' is displayed.</msg>
+<status status="PASS" starttime="20230703 09:41:48.088" endtime="20230703 09:41:48.137"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:48.088" endtime="20230703 09:41:48.137"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230703 09:41:48.137" endtime="20230703 09:41:50.356"/>
+</kw>
+<doc>Test Admin Login</doc>
+<tag>Somke</tag>
+<status status="PASS" starttime="20230703 09:41:33.733" endtime="20230703 09:41:50.356"/>
+</test>
+<test id="s1-t2" name="Test_Hr_Login" line="15">
+<kw name="Open Browser and Open Login Page" library="Login_Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Login_Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230703 09:41:50.356" level="INFO">Opening browser 'chrome' to base url 'https://hospitalb.com/login'.</msg>
+<status status="PASS" starttime="20230703 09:41:50.356" endtime="20230703 09:41:55.254"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230703 09:41:55.254" endtime="20230703 09:41:55.395"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:50.356" endtime="20230703 09:41:55.395"/>
+</kw>
+<kw name="Input Email And Pass" library="Login_Page">
+<arg>${USER HR}[email]</arg>
+<arg>${USER HR}[password]</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:55.395" level="INFO">Typing text 'hr@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230703 09:41:55.395" endtime="20230703 09:41:55.588"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:55.588" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230703 09:41:55.588" endtime="20230703 09:41:55.719"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:55.395" endtime="20230703 09:41:55.719"/>
+</kw>
+<kw name="Sleep Time 2s" library="Login_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230703 09:41:57.723" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230703 09:41:55.721" endtime="20230703 09:41:57.723"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:55.721" endtime="20230703 09:41:57.723"/>
+</kw>
+<kw name="Click Sign In Button" library="Login_Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@value='Sign In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230703 09:41:57.723" level="INFO">Clicking element 'xpath://input[@value='Sign In']'.</msg>
+<status status="PASS" starttime="20230703 09:41:57.723" endtime="20230703 09:42:03.157"/>
+</kw>
+<status status="PASS" starttime="20230703 09:41:57.723" endtime="20230703 09:42:03.157"/>
+</kw>
+<kw name="Page Have Hospital Statistics Header" library="Login_Page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://h1[contains(text(),'Hospital Statistics')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230703 09:42:03.211" level="INFO">Element 'xpath://h1[contains(text(),'Hospital Statistics')]' is displayed.</msg>
+<status status="PASS" starttime="20230703 09:42:03.160" endtime="20230703 09:42:03.211"/>
+</kw>
+<status status="PASS" starttime="20230703 09:42:03.157" endtime="20230703 09:42:03.211"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230703 09:42:03.211" endtime="20230703 09:42:05.484"/>
+</kw>
+<doc>Test HR Login</doc>
+<tag>Somke</tag>
+<status status="PASS" starttime="20230703 09:41:50.356" endtime="20230703 09:42:05.484"/>
+</test>
+<doc>Test Login Functionality</doc>
+<status status="PASS" starttime="20230703 09:41:33.468" endtime="20230703 09:42:05.484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Somke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="All User Login">All User Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

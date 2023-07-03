@@ -1,0 +1,23 @@
+1687789359715	geckodriver	INFO	Listening on 127.0.0.1:50503
+1687789362773	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50504" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\rust_mozprofilexrsipl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1687789363642	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1687789363652	Marionette	INFO	Listening on port 50514
+Read port: 50514
+WebDriver BiDi listening on ws://127.0.0.1:50504
+1687789364018	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50504/devtools/browser/6db75515-c401-403e-aef7-ca5056beab2c
+[Parent 20776, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hospitalb.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hospitalb.com."
+1687789377178	Marionette	INFO	Stopped listening on port 50514
+Dynamically enable window occlusion 1
+[GFX1-]: Failed to get descriptor for recorded texture.
+[GFX1-]: Killing GPU process due to IPC reply timeout
+[GFX1-]: CompositorBridgeChild receives IPC close with reas[on=AbnormalShuGFX1-]: Ctdown
+ompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[Parent 20776, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:353
