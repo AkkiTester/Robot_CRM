@@ -2,6 +2,10 @@
 Library    SeleniumLibrary
 
 *** Keywords ***
+Admin Login
+    Open Browser And Open Login Page
+    Input Email And Pass     ${USER Admin}[email]     ${USER Admin}[password]
+    Click Sign In Button
 Open Browser and Open Login Page
     Open Browser    ${Login_Url}    ${Browser}
     Maximize Browser Window
